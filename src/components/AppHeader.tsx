@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { CourtLogo } from "@/components/CourtLogo";
 import { useLanguage } from "@/shared/i18n/LanguageContext";
 import { UI_TEXT } from "@/shared/i18n/translations";
 
@@ -14,10 +15,10 @@ export function AppHeader() {
       <div className="mx-auto flex items-center justify-between gap-4 px-4 md:px-6 lg:px-8 max-w-[1200px] py-4">
         <Link
           href="/"
-          className="flex items-center gap-2 font-display text-[20px] leading-[26px] font-bold text-ink no-underline hover:text-ink"
+          className="flex items-center gap-2.5 font-display text-[20px] leading-[26px] font-bold text-ink no-underline hover:text-ink group"
         >
-          <span className="text-xl">⚖️</span>
-          <span>Decision Court</span>
+          <CourtLogo size={32} className="transition-transform group-hover:scale-105 shrink-0 drop-shadow-xs" />
+          <span className="tracking-tight font-serif text-ink">Decision Court</span>
           <span className="text-xs px-2 py-0.5 rounded-full bg-pause/15 text-pause font-semibold font-body tracking-wider uppercase">
             {isZh ? "小作文透视法庭" : "Statement Decoder"}
           </span>
