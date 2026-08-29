@@ -1,4 +1,6 @@
-"use client";
+import os
+
+py_script = """\"use client\";
 
 import { useReducer, useState } from "react";
 import Link from "next/link";
@@ -704,3 +706,8 @@ export default function ToolPage() {
     );
   }
 }
+"""
+
+with open("src/app/tools/should-i-send-this-text/page.tsx", "w", encoding="utf-8") as f:
+  f.write(py_script)
+print("Updated should-i-send-this-text/page.tsx successfully")

@@ -1,4 +1,6 @@
-"use client";
+import os
+
+py_script = """\"use client\";
 
 import type { BasicResult } from "@/shared/contracts/check";
 import { useLanguage } from "@/shared/i18n/LanguageContext";
@@ -150,3 +152,8 @@ function ResultSection({ title, children }: { title: string; children: React.Rea
     </section>
   );
 }
+"""
+
+with open("src/features/check/BasicResultPanel.tsx", "w", encoding="utf-8") as f:
+  f.write(py_script)
+print("Updated BasicResultPanel.tsx successfully")
