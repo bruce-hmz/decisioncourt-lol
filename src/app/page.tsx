@@ -1,0 +1,9 @@
+import { DossierViewer } from "@/features/dossier/DossierViewer";
+
+export default function RootPage() {
+  return (
+    <div className="w-full px-4 md:px-6 lg:px-8 py-4 md:py-8 max-w-[1200px] mx-auto">
+      <DossierViewer />
+    </div>
+  );
+}
