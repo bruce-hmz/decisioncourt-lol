@@ -28,7 +28,10 @@ export const metadata: Metadata = {
   title: "Decision Court · 小作文透视法庭",
   description:
     "撕开体面伪装，透视公关算盘与潜台词。多维解构热点声明、全员信与小作文背后的真实动机与翻车风险。",
-  robots: { index: false, follow: false },
+  robots: { index: true, follow: true },
+  verification: {
+    google: "ds1KaVnxt9swSEUvMshO2wGWk7sVyWr3vZH5_3gb7xU",
+  },
 };
 
 export default function RootLayout({
