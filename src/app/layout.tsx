@@ -25,10 +25,24 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://decisioncourt.lol"),
   title: "Decision Court · 小作文透视法庭",
   description:
     "撕开体面伪装，透视公关算盘与潜台词。多维解构热点声明、全员信与小作文背后的真实动机与翻车风险。",
   robots: { index: true, follow: true },
+  openGraph: {
+    title: "Decision Court · 小作文透视法庭",
+    description: "撕开体面伪装，透视公关算盘与潜台词。多维解构热点声明、全员信与小作文背后的真实动机。",
+    url: "https://decisioncourt.lol",
+    siteName: "Decision Court",
+    locale: "zh_CN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Decision Court · Statement Decoder",
+    description: "Strip away the PR spin. Decode hidden agendas, fatal flaws, and calculated distraction tactics behind viral statements.",
+  },
   verification: {
     google: "ds1KaVnxt9swSEUvMshO2wGWk7sVyWr3vZH5_3gb7xU",
   },
